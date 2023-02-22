@@ -4,37 +4,39 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
 
     <header class="page-header">
-      <a class="navigation-logo" >
-        <img class="page-header-logo" src="#" alt="Логотип города Седона.">
+      <a class="navigation-logo">
+        <img class="page-header-logo" src="images/sedona-logo.svg" width="140" height="70" alt="Логотип города Седона.">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+            <a class="navigation-link navigation-link-main navigation-link-current" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">О Седоне</a>
+            <a class="navigation-link navigation-link-about" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link navigation-link-hotels" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
 
         <ul class="navigation-user">
           <li class="navigation-item">
-            <span class="visually-hidden">
-              <a class="navigation-link" href="#">Поиск</a>
-            </span>
+            <a class="navigation-link navigation-link-search" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
           </li>
           <li class="navigation-item">
-            <span class="visually-hidden">
-              <a class="navigation-link" href="#">Избранное</a>
-            </span>
+            <a class="navigation-link navigation-link-favorite" href="#">
+              <span class="visually-hidden">Избранное</span>
+              <span class="number-of-likes">12</span>
+            </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Хочу сюда!</a>
@@ -48,8 +50,9 @@
 
       <section class="hero">
         <h2 class="visually-hidden">О Седоне</h2>
-        <img class="mountins-pic" src="#" alt="Горы.">
-        <img class="greeting-logo" src="#" alt="Welcome to gorgeous Sedona, because the Grand Canyon sucks.">
+        <img class="mountins-pic" src="images/index-background.jpg" width="1200" height="485" alt="Горы.">
+        <img class="greeting-logo" src="images/welcome.svg" width="458" height="352"
+          alt="Welcome to gorgeous Sedona, because the Grand Canyon sucks.">
       </section>
 
 
@@ -62,7 +65,7 @@
           <li class="advantages-item advantages-item-wide">
             <h3 class="advantages-title">Настоящий городок</h3>
             <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img class="advantages-img" src="#" alt="Домик на фоне гор.">
+            <img class="advantages-img" src="images/photo-of-city.jpg" width="800" height="385" alt="Домик на фоне гор.">
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title">Небольшая площадь</h3>
@@ -79,7 +82,8 @@
           <li class="advantages-item advantages-item-wide">
             <h3 class="advantages-title">Там есть мост дьявола</h3>
             <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            <img class="advantages-img" src="#" alt="Моста Дьявола на фоне гор.">
+            <img class="advantages-img" src="images/devil-bridge.jpg" width="800" height="385"
+              alt="Моста Дьявола на фоне гор.">
           </li>
         </ul>
 
@@ -92,19 +96,16 @@
         <p>Опытный персонал и качественное обслуживание!</p>
         <ul class="features-list">
           <li class="features-item">
-            <img class="features-item-image" src="#" alt="">
             <h3 class="features-item-title">Жильё</h3>
             <p class="features-item-description">Рекомендуем пожить в настоящем мотеле,
               всё как в кино!</p>
           </li>
           <li class="features-item">
-            <img class="features-item-image" src="#" alt="">
             <h3 class="features-item-title">Еда</h3>
             <p class="features-item-description">Всегда заказывайте
               топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="features-item">
-            <img class="features-item-image" src="#" alt="">
             <h3 class="features-item-title">Сувениры</h3>
             <p class="features-item-description">Не только китайского,
               но и настоящего местного производства!</p>
@@ -162,10 +163,10 @@
 
       <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
 
-      <p class="about-text"><a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
-
+      <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+        <img src="images/html-academy-logo.svg" alt="HTML-Academy logo">
+        <span class="visually-hidden">.html academy</span>
+      </a>
     </footer>
-
   </body>
-
 </html>
