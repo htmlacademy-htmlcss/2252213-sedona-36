@@ -66,13 +66,6 @@ body {
   height: 485px;
 }
 
-.divider {
-  background-image: url("../images/divider.svg");
-  background-repeat: no-repeat;
-  width: 1200px;
-  height: 57px;
-}
-
 .lead {
   font-weight: 700;
   font-size: 30px;
