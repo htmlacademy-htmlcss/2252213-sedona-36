@@ -63,7 +63,7 @@ body {
   background-repeat: no-repeat;
   text-align: center;
   width: 1200px;
-  height: 485px;
+
 }
 
 .lead {
@@ -163,7 +163,7 @@ body {
   background-color: #A4766B;
   background-image: url("../images/subscribe.jpg");
   width: 1200px;
-  height: 414.86px;
+
   text-align: center;
   color: #FFFFFF;
 }
@@ -209,7 +209,7 @@ body {
   background-image: url("../images/catalog-filter.jpg");
   background-repeat: no-repeat;
   width: 1200px;
-  height: 412px;
+
   color: #ffffff;
 }
 
@@ -334,7 +334,6 @@ body {
 .pagination-link {
   color: #ffffff;
   background-color: #82B3D3;
-  ;
   text-decoration: none;
   font-weight: 700;
   font-size: 20px;
@@ -352,10 +351,4 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-}
-
-.subscribe-catalog {
-  width: 1200px;
-  height: 414.86px;
-  text-align: center;
 }
