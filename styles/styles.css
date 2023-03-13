@@ -338,6 +338,7 @@ body {
 }
 
 .subscribe-title {
+  margin-top: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -350,6 +351,13 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 54px;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
 }
 
 .subscribe-button {
@@ -358,7 +366,19 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  padding: 8px 50px;
+  border-style: hidden;
 }
+
+.field {
+padding: 12px 20px;
+gap: 260px;
+width: 452px;
+background: #F2F2F2;
+border-radius: 4px 0 0 4px;
+border-style: hidden;
+}
+
 
 /* Футер */
 .page-footer {
@@ -635,13 +655,50 @@ body {
 
 .subscribe-catalog {
   text-align: center;
+  color: #FFFFFF;
   padding: 96px 258px 104px;
 }
 
 .subscribe-title {
-  margin-bottom: 20px;
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
 }
 
 .subscribe-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  margin-top: 0;
   margin-bottom: 54px;
+  color: #333333;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe-button {
+  background: #82B3D3;
+  border-radius: 0 4px 4px 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  padding: 8px 50px;
+  border-style: hidden;
+}
+
+.field {
+padding: 12px 20px;
+gap: 260px;
+width: 452px;
+background: #F2F2F2;
+border-radius: 4px 0 0 4px;
+border-style: hidden;
 }
