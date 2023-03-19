@@ -70,6 +70,7 @@ body {
 
 /* Шапка */
 .page-header {
+  position: relative;
   padding: 0 70px;
 }
 
@@ -78,12 +79,13 @@ body {
 }
 
 .navigation-logo {
-  position: absolute;
+  position:absolute;
   display: block;
   margin-right: 30px;
   padding: 0;
   width: 140px;
   Height: 70px;
+  z-index: 1;
 }
 
 .navigation-list {
@@ -121,7 +123,8 @@ body {
   border: 2px solid #756257;
   right: 16px;
   left: 16px;
-  margin-top: 36px;
+  bottom: -2px;
+  z-index: 2;
 }
 
 .navigation-user {
@@ -221,7 +224,6 @@ body {
   background-repeat: no-repeat;
   text-align: center;
   padding: 50px 370px 82px;
-  margin-top: -6px;
 }
 
 .hero::after {
@@ -881,7 +883,7 @@ body {
   align-items: center;
 }
 
-.hotel-rating-image {
+.hotel-rating-pic {
   background-image: url("../images/star.svg");
   background-position: left;
   background-repeat: no-repeat;
