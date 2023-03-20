@@ -79,7 +79,7 @@ body {
 }
 
 .navigation-logo {
-  position:absolute;
+  position: absolute;
   display: block;
   margin-right: 30px;
   padding: 0;
@@ -703,9 +703,225 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+
+  margin-bottom: 32px;
+}
+
+.catalog-filter {
+  display: flex;
+  width: 1060px;
+}
+
+.catalog-filter-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  margin-right: 70px;
+  border: none;
+  gap: 16px;
+}
+
+.catalog-filter-range {
+  display: flex;
+  justify-content: end;
+  width: 549px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  margin-left: auto;
+}
+
+.range {
+  display: flex;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+}
+
+.range-input {
+  align-items: center;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  width: 143px;
+  height: 48px;
+  background: #F2F2F2;
+  border: none;
+}
+
+.range-input:focus {
+  background: #E6E6E6;
+  border: 3px solid #83B3D3;
+  outline: none;
+}
+
+.range-input:active {
+  background: #E6E6E6;
+  border: 2px solid #000000;
+  outline: none;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.catalog-filter-label {
+  display: flex;
+  margin-right: 5px;
+}
+
+.range-input-left {
+  border-radius: 4px 0 0 4px;
+  margin-right: 2px;
+}
+
+.range-input-right {
+  border-radius: 0 4px 4px 0;
+}
+
+.range-scale {
+  position: relative;
+  width: 287px;
+  height: 0;
+  left: 0;
+  top: 44px;
+  border: 2px solid #5E676D;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+  margin-top: -2px;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background: #FFFFFF;
+  border-radius: 5px;
+  border: none;
+}
+
+.range-toggle:hover {
+  background-color: #FFFFFF;
+}
+
+.range-toggle:focus {
+  background: #FFFFFF;
+  border: 3px solid #83B3D3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.range-toggle:active {
+  background: #FFFFFF;
+  border: 2px solid #83B3D3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -1px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+.range-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  margin-left: 70px;
 }
 
 .control {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  background: #FFFFFF;
+  border-radius: 4px;
+  top: 4px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.control-mark-radio {
+  position: absolute;
+  background: #FFFFFF;
+  border-radius: 50%;
+  margin-top: 1.5px;
+  margin-bottom: 1.5px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.control:hover .control-mark,
+.control:hover .control-mark-radio {
+  background-color: #C9DAE8;
+}
+
+.control:focus .control-mark,
+.control:focus .control-mark-radio {
+  background-color: #83B3D3;
+}
+
+.control:active .control-mark,
+.control:active .control-mark-radio {
+  background-color: #94A6B7;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  background: #FFFFFF;
+  border-radius: 4px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  content: "";
+  background-image: url("../images/check.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 12px 9px;
+}
+
+.control-input[type="radio"]:checked + .control-mark-radio::before {
+  position: absolute;
+  content: "";
+  margin-bottom: 1.5px;
+  background: #FFFFFF;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-image: url("../images/dot.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 10px;
+}
+
+
+.control-label {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
@@ -720,6 +936,8 @@ body {
   line-height: 20px;
   padding-top: 8px;
   padding-bottom: 8px;
+  border: none;
+  margin-bottom: 32px;
 }
 
 .button-apply:hover {
@@ -750,7 +968,7 @@ body {
 }
 
 .button-reset:focus {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   border-radius: 4px;
   background: none;
 }
@@ -758,7 +976,6 @@ body {
 .button-reset:active {
   color: rgba(255, 255, 255, 0.3);
   background: none;
-
 }
 
 /* Отели */
@@ -836,7 +1053,7 @@ body {
 }
 
 .select-control:active {
- border-color: #3F5E72;
+  border-color: #3F5E72;
 }
 
 /* Список товаров */
